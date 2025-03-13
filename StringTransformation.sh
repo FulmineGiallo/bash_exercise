@@ -9,3 +9,7 @@ if [ $# -eq 0 ]; then
 fi
 
 echo "$1" | sed -E 'y/aeiou/AEIOU/g'
+
+# Versione con *
+echo "$1" | sed -E 's/[aeiouAEIOU]/*/g'
+

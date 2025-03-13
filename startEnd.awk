@@ -5,3 +5,6 @@
 {
     print $0
 }
+
+# seconda versione dove si vogliono le linee che iniziano con es e non finiscono con ame.
+awk '/^es/ && !/ame$/' file.txt
